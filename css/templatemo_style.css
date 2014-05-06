@@ -966,3 +966,24 @@ and (max-device-width : 1024px) {
   -ms-transform: translate(0, 50%) !important; /* IE 9 */
   -webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
 }
+
+.teamRow1Member{
+  padding: 0 33%;
+}
+
+.teamRow2Member{
+  padding: 0 23%;
+}
+
+.textHighlight{
+  color: #00ACE9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.custom-modal-footer
+{
+  padding: 19px 20px 20px;
+margin-top: 15px;
+text-align: right;
+}
