@@ -481,6 +481,7 @@ img {
 }
 .thumb img {
   text-align: center;
+  height: 161px;
 }
 .loadit {
   text-align: center;
