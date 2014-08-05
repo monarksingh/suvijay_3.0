@@ -483,6 +483,15 @@ img {
   text-align: center;
   height: 161px;
 }
+
+.gridImg{
+  height: 161px !important;
+}
+
+.listImg{
+  height: 80px !important;
+}
+
 .loadit {
   text-align: center;
 }
