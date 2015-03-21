@@ -38,6 +38,11 @@ jQuery(document).ready(function() {
             });
 
     });
+
+    $('#aboutUsTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
     /**
      * Created by MonarkSingh on 03-Feb-15.
      */

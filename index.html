@@ -2,8 +2,6 @@
 <html>
 <head>
     <title>Suvijay Buildcon</title>
-    <!--  <meta name="keywords" content="powerful, responsive, fluid, bootstrap, blue, white, free website template, templatemo" />
-      <meta name="description" content="Powerful is a responsive template based on Bootstrap. This fluid layout is ready for mobile devices and provided by templatemo for free download." /> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -93,14 +91,23 @@
                     <h1 class="text-center">ABOUT US</h1>
                     <!-- <p class="text-center"><small>Etiam ornare lectus quis urna cursus eleifend et nec nisl. Etiam porta, ante commodo facilisis blandit, magna ipsum elementum ligula, et dapibus purus nibh ut tellus. Vivamus justo nisi, ornare id lobortis non, cursus in enim.</small></p> -->
                 </div>
-                <div class="knobWrap">
-                    <div class="row">
+                <div role="tabpanel">
 
-                        <div class="col-sm-6 col-md-6">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist" id="aboutUsTab">
+                        <li role="presentation" class="active"><a href="#history" aria-controls="home" role="tab" data-toggle="tab">History</a></li>
+                        <li role="presentation"><a href="#company" aria-controls="profile" role="tab" data-toggle="tab">Company</a></li>
+                        <li role="presentation"><a href="#currentScenario" aria-controls="messages" role="tab" data-toggle="tab">Current Scenario</a></li>
+                        <li role="presentation"><a href="#coreValues" aria-controls="settings" role="tab" data-toggle="tab">Core Values</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="history">
                             <div class="infoTxt">
                                 <h4 class="text-center" style="color:#00ACE9;">History</h4>
 
-                                <p>Our journey started as a Proprietary Organization in 1984 by a young Civil Engineer,
+                                <p class="text-center">Our journey started as a Proprietary Organization in 1984 by a young Civil Engineer,
                                     Mr. Jawahar Bhandari and later became a Partnership Organization in 1989. The
                                     Organization was also active as Builders and Developers under the name SBL
                                     Constructions till 1993. Keeping the growing business in mind and visualizing the
@@ -112,29 +119,10 @@
                                     to establishment of the Gujarat Division and formation of Suvijay Buildcon (Pune)
                                     Pvt. Ltd. (SBPPL) in the year 2007. </p>
                             </div>
-
-
-                            <!-- <div class="infoTxt">
-                              <h4 class="text-center" style="color:#00ACE9;">Purpose</h4>
-                              <p class="text-center"><small>We exist to provide high quality construction services, transforming ideas into realities.</small></p>
-                            </div>
-
-                            <div class="infoTxt">
-                              <h4 class="text-center" style="color:#00ACE9;">Core Values</h4>
-                              <p class="text-center"><small><ul class="text-center list-center">
-                              <li>Respect for Individuals </li>
-                              <li>Teamwork with individual productivity </li>
-                              <li>Self motivation, self upgradation and continuous innovation </li>
-                              <li>Work life balance </li>
-                              <li>Open communication </li>
-                              <li>Healthy environment </li>
-                              </ul></small></p>
-                            </div> -->
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div role="tabpanel" class="tab-pane" id="company">
                             <div class="infoTxt">
-                                <h4 class="text-center" style="color:#00ACE9;">COMPANY</h4>
-
+                                <h4 class="text-center" style="color:#00ACE9;">Cpmpany</h4>
                                 <p class="text-center">
                                 <ul class="list-center with-bullets">
                                     <li>SBPPL is a professionally managed Construction Company with a strong presence in
@@ -161,12 +149,8 @@
                                 </ul>
                                 </p>
                             </div>
-                            <!-- <div class="infoTxt">
-                              <h4 class="text-center" style="color:#00ACE9;">Our Vision</h4>
-                              <p class="text-center"><small>To be the most sought after construction and interior design company providing turnkey solutions under one roof</small></p>
-                            </div> -->
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div role="tabpanel" class="tab-pane" id="currentScenario">
                             <div class="infoTxt">
                                 <h4 class="text-center" style="color:#00ACE9;">Current Scenario</h4>
 
@@ -181,7 +165,7 @@
                                     over-run. </p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div role="tabpanel" class="tab-pane" id="coreValues">
                             <div class="infoTxt">
                                 <h4 class="text-center" style="color:#00ACE9;">Core Values</h4>
 
@@ -196,10 +180,18 @@
                                 </ul>
                                 </p>
                             </div>
+                            <div class="infoTxt">
+                                <h4 class="text-center" style="color:#00ACE9;">Purpose</h4>
+                                <p class="text-center">We exist to provide high quality construction services, transforming ideas into realities.</p>
+                            </div>
+                            <div class="infoTxt">
+                                <h4 class="text-center" style="color:#00ACE9;">Our Vision</h4>
+                                <p class="text-center">To be the most sought after construction and interior design company providing turnkey solutions under one roof</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
 
                 <div class="teamInfo">
                     <!-- <ul>
@@ -314,9 +306,7 @@
                     <!-- </li>
                                   </ul> -->
                 </div>
-                <div class="infoTxt">
-                    <!--  <p class="text-center"><small>Praesent sed mi luctus nulla malesuada mattis. Nunc dictum arcu nisi, ac sodales velit dapibus eu. Curabitur ut erat eu ante adipiscing adipiscing. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer rutrum tortor tellus, ac porta erat volutpat tincidunt. Maecenas porttitor eleifend euismod. Duis varius varius mauris, a ornare neque sagittis non. Nulla eget enim ultricies, elementum ipsum dignissim, sagittis justo. Download and use this <a href="http://www.tooplate.com">free website template</a> for your websites.</small></p> -->
-                </div>
+
                 <!--  <div class="row">
                   <div class="col-md-12">
                     <div class="socials sbot">
