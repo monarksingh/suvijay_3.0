@@ -21,7 +21,6 @@ jQuery(document).ready(function() {
 
         //if one of form fields is empty - exit
         if ($form.find('[name]').hasClass('invalid')) {
-            //jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">Please fill the full form</span>');
             addMessage("Please fill the full form");
             return;
         }
@@ -29,12 +28,14 @@ jQuery(document).ready(function() {
         var request = $form.serialize();
         var ajax = jQuery.post("contact-form.php", request)
             .done(function (data) {
-                //jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">' + data + '</span>');
+                $form[0].reset();
                 addMessage(data);
+
             })
             .fail(function (data) {
                 //jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">Mail cannot be sent. You need PHP server to send mail.</span>');
                 addMessage("Mail cannot be sent. You need PHP server to send mail.")
+                $form[0].reset();
             });
 
     });
